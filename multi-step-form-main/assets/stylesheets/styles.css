@@ -1,0 +1,19 @@
+/* Font */
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../fonts/Ubuntu-Regular.ttf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../fonts/Ubuntu-Medium.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../fonts/Ubuntu-Bold.ttf");
+    font-weight: 900;
+}
