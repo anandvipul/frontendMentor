@@ -3,21 +3,175 @@
 @font-face {
     font-family: "Ubuntu";
     src: url("../fonts/Ubuntu-Regular.ttf");
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: "Ubuntu";
-    src: url("../fonts/Ubuntu-Medium.ttf");
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Ubuntu";
-    src: url("../fonts/Ubuntu-Bold.ttf");
-    font-weight: 900;
+    src: url("../fonts/Ubuntu-Medium.ttf");
+    font-weight: 500;
 }
 
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../fonts/Ubuntu-Bold.ttf");
+    font-weight: 700;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Ubuntu";
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: hsl(213, 96%, 18%);
+}
+
+
+h3, p {
+    margin: 0;
+}
+p {
+    color: hsl(231, 11%, 63%);
+}
+
+ul {
+  list-style: none;  
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+label {
+    color: hsl(213, 96%, 18%);
+}
 .main-card {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    display: none;
+}
+
+.section {
+    /* border: 2px solid red; */
+}
+
+.left-section {
+    padding: 1rem;
+    position: relative;
+}
+
+.sidebar-menu {
+    position: absolute;
+    top: 0; 
+    left: 3rem;
+    right: 0;
+    margin-top: 4rem;
+    width: 100%;
+    /* padding: 2rem; */
+}
+
+ul li {
+    margin-bottom: 2rem;
     
+}
+
+.selected-plan {
+    background-color: hsl(206, 94%, 87%);
+}
+
+.circle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid hsl(206, 94%, 87%);
+    line-height: 2rem;
+    text-align: center;
+}
+
+.plan {
+    color: hsl(229, 24%, 87%);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.plan-head {
+    color: hsl(231, 11%, 63%);
+    font-size: 0.6rem;
+    text-transform: uppercase;
+}
+
+.info-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.right-section {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex; 
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: 2rem;
+}
+
+
+label{
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    padding: 1rem 1rem;
+    border-color: white;
+    border-style: unset;
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+    
+}
+
+input:focus {
+    outline: 2px solid hsl(213, 96%, 18%);
+    border-radius: 0.2rem;
+}
+
+input:invalid {
+    color: red;
+}
+
+.next-btn-container {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.next-btn {
+    padding: 0.4rem 1rem;
+    color: white;
+    background-color: hsl(213, 96%, 18%);
+    border-radius: 0.2rem;
 }
